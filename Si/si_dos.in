@@ -1,0 +1,8 @@
+&DOS
+    outdir = './out',
+    prefix = 'silicon',
+    fildos = 'si.dos',
+    Emin = -10.0,
+    Emax = 10.0,
+    DeltaE = 0.01,
+/
