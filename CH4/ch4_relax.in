@@ -1,0 +1,53 @@
+&CONTROL
+  calculation = 'vc-relax'   ! Perform variable-cell relaxation
+  prefix = 'ch4'             ! Prefix for output files
+  outdir = './'              ! Directory for output files
+  pseudo_dir = './'          ! Directory containing pseudopotentials
+  tprnfor = .true.           ! Calculate forces
+  tstress = .true.           ! Calculate stress (useful for vc-relax)
+  forc_conv_thr = 1.0d-3     ! Force convergence threshold (Ry/bohr)
+  etot_conv_thr = 1.0d-4     ! Energy convergence threshold (Ry)
+/
+
+&SYSTEM
+  ibrav = 0                  ! Free lattice (no Bravais lattice for molecules)
+  nat = 5                    ! Number of atoms (1 C + 4 H)
+  ntyp = 2                   ! Number of atom types (C and H)
+  ecutwfc = 40.0             ! Kinetic energy cutoff (Ry)
+  ecutrho = 320.0            ! Charge density cutoff (Ry, typically 8*ecutwfc for PAW)
+  occupations = 'smearing'   ! Use smearing for molecular systems
+  smearing = 'gaussian'      ! Gaussian smearing
+  degauss = 0.01             ! Smearing width (Ry)
+/
+
+&ELECTRONS
+  conv_thr = 1.0d-8         ! Convergence threshold for SCF
+  mixing_beta = 0.7          ! Mixing factor for density
+  electron_maxstep = 100     ! Max SCF steps
+/
+
+&IONS
+  ion_dynamics = 'bfgs'      ! BFGS algorithm for ionic relaxation
+/
+
+&CELL
+  cell_dynamics = 'bfgs'     ! BFGS for cell relaxation
+/
+
+ATOMIC_SPECIES
+ C  12.0107  C.pbe-n-kjpaw_psl.1.0.0.UPF
+ H   1.00794 H.pbe-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+ C  0.000000  0.000000  0.000000
+ H  0.629118  0.629118  0.629118
+ H -0.629118 -0.629118  0.629118
+ H -0.629118  0.629118 -0.629118
+ H  0.629118 -0.629118 -0.629118
+
+K_POINTS {gamma}            ! Gamma point only (suitable for molecules)
+
+CELL_PARAMETERS {angstrom}
+  10.0  0.0  0.0
+   0.0 10.0  0.0
+   0.0  0.0 10.0

@@ -1,0 +1,2201 @@
+
+     Program PWSCF v.7.4.1 starts on  5Jul2025 at  8: 1:18 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     7602 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from h2o_dipole.in
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+     Message from routine iosys:
+     london is obsolete, use "vdw_corr='grimme-d2'" instead
+     file O.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+     file H.pbe-kjpaw_psl.1.0.0.UPF: wavefunction(s)  1S renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        8585    4281   1085               599161   211657   26529
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =      15.0000  a.u.
+     unit-cell volume          =    3375.0000 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            4
+     kinetic-energy cutoff     =      60.0000  Ry
+     charge density cutoff     =     480.0000  Ry
+     scf convergence threshold =      1.0E-10
+     mixing beta               =       0.3000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+     Using Berry phase electric field
+     In a.u.(Ry)  cartesian system of reference
+        0.0000000000
+        0.0000000000
+        0.0000000000
+     In a.u.(Ry)  crystal system of reference
+        0.0000000000
+        0.0000000000
+        0.0000000000
+     Number of iterative cycles:   1
+
+
+     celldm(1)=  15.000000  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for O  read from file:
+     ./O.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: e99d9cef9b487d1ca56f5b95ecd0fd7a
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for H  read from file:
+     ./H.pbe-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d81a744832360e4a8af0b0b5b123bc2a
+     Pseudo is Projector augmented-wave, Zval =  1.0
+     Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3MaX
+     Shape of augmentation charge: PSQ
+     Using radial grid of  929 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+     O                 6.00    15.99900     O ( 1.00)
+     H                 1.00     1.00790     H ( 1.00)
+
+     No symmetry found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group C_1 (1)    
+     there are  1 classes
+     the character table:
+
+       E    
+A      1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1        O      tau(   1) = (   0.0000000  -0.0009721   0.0000000  )
+         2        H      tau(   2) = (   0.0964342   0.0743114   0.0000000  )
+         3        H      tau(   3) = (  -0.0964342   0.0743114   0.0000000  )
+
+     -------------------------------------------------
+     Parameters for Dispersion (Grimme-D2) Correction:
+     -------------------------------------------------
+       atom      VdW radius       C_6     
+
+        O          2.536         24.284
+        H          1.892          4.857
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1        O      tau(   1) = (  0.0000000 -0.0009721  0.0000000  )
+         2        H      tau(   2) = (  0.0964342  0.0743114  0.0000000  )
+         3        H      tau(   3) = ( -0.0964342  0.0743114  0.0000000  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   599161 G-vectors     FFT dimensions: ( 108, 108, 108)
+
+     Smooth grid:   211657 G-vectors     FFT dimensions: (  75,  75,  75)
+
+     Dynamical RAM for                 wfc:       1.62 MB
+
+     Dynamical RAM for     wfc (w. buffer):       1.62 MB
+
+     Dynamical RAM for           str. fact:      18.28 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:       4.85 MB
+
+     Dynamical RAM for                qrad:       1.00 MB
+
+     Dynamical RAM for          rho,v,vnew:      56.26 MB
+
+     Dynamical RAM for               rhoin:      18.75 MB
+
+     Dynamical RAM for            rho*nmix:     146.28 MB
+
+     Dynamical RAM for           G-vectors:      35.90 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.00 MB
+
+     Dynamical RAM for          <psi|beta>:       0.00 MB
+
+     Dynamical RAM for                 psi:       3.23 MB
+
+     Dynamical RAM for                hpsi:       3.23 MB
+
+     Dynamical RAM for                spsi:       3.23 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:       3.23 MB
+
+     Dynamical RAM for           addusdens:     411.41 MB
+
+     Dynamical RAM for          addusforce:     434.27 MB
+
+     Dynamical RAM for         addusstress:     457.12 MB
+
+     Estimated static dynamical RAM per process >     212.15 MB
+
+     Estimated max dynamical RAM per process >     815.55 MB
+
+     Initial potential from superposition of free atoms
+
+     starting charge       8.0000, renormalised to       8.0000
+
+     negative rho (up, down):  1.926E-04 0.000E+00
+     Starting wfcs are    6 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is        2.3 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           579 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7167 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.00E-02,  avg # of iterations =  3.0
+
+     negative rho (up, down):  2.175E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.84195135616871575,-2.10047969708264609E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.6845618863830670E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.83770961535339850,-0.15666246972910403)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.2483604495226350     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.86685249518629504,4.88524834681473320E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   3.8053379241270002E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.6845618863830670E-002
+           2  -1.2483604495226350     
+           3   3.8053379241270002E-002
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is        4.2 secs
+
+     total energy              =     -43.94475078 Ry
+     estimated scf accuracy    <       0.47778596 Ry
+
+     iteration #  2     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           632 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7051 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  5.97E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  3.350E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.83609343900956967,-1.98806357166550181E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.6055765548996469E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.82793439885767750,-0.17779483147439190)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.4283460866586801     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.86002882037775907,4.89715895447019600E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   3.8448808522970737E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.6055765548996469E-002
+           2  -1.4283460866586801     
+           3   3.8448808522970737E-002
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is        5.9 secs
+
+     total energy              =     -43.88971702 Ry
+     estimated scf accuracy    <       0.14891788 Ry
+
+     iteration #  3     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           659 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6953 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.86E-03,  avg # of iterations =  8.0
+
+     negative rho (up, down):  3.136E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.78955273363693201,2.14926195796464768E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.8380762423148407E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.74741372713552823,-0.28314240846678368)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.4451950973632059     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.83044727294764054,-3.45707887580528001E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.8109369253834920E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.8380762423148407E-002
+           2  -2.4451950973632059     
+           3  -2.8109369253834920E-002
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is        7.8 secs
+
+     total energy              =     -44.05855455 Ry
+     estimated scf accuracy    <       0.27072690 Ry
+
+     iteration #  4     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           665 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7008 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.86E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  3.144E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.79052844034980774,1.44704369405410072E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.2360044810398074E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.74730544978258884,-0.28606636754156001)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.4685924548537717     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.82978315223745336,-4.51901243431812073E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -3.6773165322219130E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.2360044810398074E-002
+           2  -2.4685924548537717     
+           3  -3.6773165322219130E-002
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is        9.5 secs
+
+     total energy              =     -44.02287999 Ry
+     estimated scf accuracy    <       0.16629147 Ry
+
+     iteration #  5     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           675 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7038 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.86E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  3.493E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.79962827755023580,3.13212704307612444E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.6448898345435810E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.75880650738347211,-0.27505228873803089)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.3481336704335223     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.83309148258491084,-5.83063712075180529E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -4.7258474920531987E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   2.6448898345435810E-003
+           2  -2.3481336704335223     
+           3  -4.7258474920531987E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       11.2 secs
+
+     total energy              =     -44.02745567 Ry
+     estimated scf accuracy    <       0.06783490 Ry
+
+     iteration #  6     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           681 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6968 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  8.48E-04,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.624E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.80234730534815835,-8.77660751589742858E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -7.3861902534129182E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.76492026166783056,-0.26862171623113135)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.2804259695035420     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.83585226231914556,-3.41316834640299186E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.7573033415601318E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -7.3861902534129182E-003
+           2  -2.2804259695035420     
+           3  -2.7573033415601318E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       13.0 secs
+
+     total energy              =     -44.02338134 Ry
+     estimated scf accuracy    <       0.03290231 Ry
+
+     iteration #  7     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           688 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6977 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  4.11E-04,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.670E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.80788104619354284,2.53707143639613462E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.1205095521207473E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78085390003015431,-0.24601947567758625)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.0609567663944866     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.83975396885128495,-2.44044176502643609E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9623277492968317E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   2.1205095521207473E-002
+           2  -2.0609567663944866     
+           3  -1.9623277492968317E-002
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       14.7 secs
+
+     total energy              =     -44.03357854 Ry
+     estimated scf accuracy    <       0.00279230 Ry
+
+     iteration #  8     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           694 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6913 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations = 10.0
+
+     negative rho (up, down):  4.808E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81866439516156231,8.34697105977717834E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   6.8846107030998702E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.80120684376560880,-0.21608201008220357)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.7787649851353717     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84737199000462671,1.92064504789934092E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.5304860777986661E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   6.8846107030998702E-004
+           2  -1.7787649851353717     
+           3   1.5304860777986661E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       16.7 secs
+
+     total energy              =     -44.04654068 Ry
+     estimated scf accuracy    <       0.02239986 Ry
+
+     iteration #  9     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           701 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6925 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.078E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81897396806455813,1.09222288058866967E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   9.0052869149919660E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.80155689938409580,-0.21592317655981744)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.7767761467206615     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84797201650953768,1.28782542633724631E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.0254910057808863E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   9.0052869149919660E-004
+           2  -1.7767761467206615     
+           3   1.0254910057808863E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       18.5 secs
+
+     total energy              =     -44.04156203 Ry
+     estimated scf accuracy    <       0.02392075 Ry
+
+     iteration # 10     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           707 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6941 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  7.026E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81881738577976404,-1.05218537242724654E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -8.6768399430897549E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.80123581228126495,-0.21611627084280247)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.7789727603711016     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84775624970190244,-4.51285531494497014E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -3.5944856409021115E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -8.6768399430897549E-004
+           2  -1.7789727603711016     
+           3  -3.5944856409021115E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       20.2 secs
+
+     total energy              =     -44.03052532 Ry
+     estimated scf accuracy    <       0.01562051 Ry
+
+     iteration # 11     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6967 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations = 10.0
+
+     negative rho (up, down):  6.086E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.80427331325431972,-1.44423021992725513E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.2125193752095208E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.77189103229904832,-0.25807278611134810)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.1786854277888290     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.83440948896535205,1.01378263517855165E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   8.2039269428104498E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.2125193752095208E-002
+           2  -2.1786854277888290     
+           3   8.2039269428104498E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       22.2 secs
+
+     total energy              =     -44.04239103 Ry
+     estimated scf accuracy    <       0.03221999 Ry
+
+     iteration # 12     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7004 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.897E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.80475483214730548,-1.37428334195652669E-003)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.1531044582888162E-002
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.77317097191404982,-0.25740394143375717)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.1700662708370064     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.83483873166316547,7.29270136541884315E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   5.8985071988104090E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.1531044582888162E-002
+           2  -2.1700662708370064     
+           3   5.8985071988104090E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       23.9 secs
+
+     total energy              =     -44.04101173 Ry
+     estimated scf accuracy    <       0.02157545 Ry
+
+     iteration # 13     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7045 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.031E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.80662177593267237,-9.61528858033078738E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -8.0491229142753470E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.77669452334367906,-0.25255605036500461)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.1228355535770045     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.83635265909706935,6.34216385815761230E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   5.1204050510169335E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -8.0491229142753470E-003
+           2  -2.1228355535770045     
+           3   5.1204050510169335E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       25.7 secs
+
+     total energy              =     -44.03346088 Ry
+     estimated scf accuracy    <       0.01424749 Ry
+
+     iteration # 14     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7051 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations =  8.0
+
+     negative rho (up, down):  5.151E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81506296781062315,2.16144692385543820E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.7906462107446040E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79394875982595092,-0.22821836342816176)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8899962578007099     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84506352010680041,7.59803600772364798E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   6.0711138502233007E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.7906462107446040E-003
+           2  -1.8899962578007099     
+           3   6.0711138502233007E-005
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       27.6 secs
+
+     total energy              =     -44.03945516 Ry
+     estimated scf accuracy    <       0.00313817 Ry
+
+     iteration # 15     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7059 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.49E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.204E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81498901378016686,2.00996280150740142E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.6653006093759468E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79387938580486650,-0.22786729782965176)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8873945262637752     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84495298756362625,5.92745439157888146E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   4.7368764639638323E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.6653006093759468E-003
+           2  -1.8873945262637752     
+           3   4.7368764639638323E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       29.3 secs
+
+     total energy              =     -44.03948647 Ry
+     estimated scf accuracy    <       0.00236093 Ry
+
+     iteration # 16     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7063 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.95E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.246E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81509279389562783,1.17695462907189946E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   9.7500995270238366E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79375074257108791,-0.22816596677425391)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8900317968554816     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84494860567277297,-5.09384743189799727E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -4.0707274301425847E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   9.7500995270238366E-004
+           2  -1.8900317968554816     
+           3  -4.0707274301425847E-005
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       31.1 secs
+
+     total energy              =     -44.03938359 Ry
+     estimated scf accuracy    <       0.00256403 Ry
+
+     iteration # 17     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7064 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.95E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.230E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81488053775918867,1.14708815519204223E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   9.5051556103708818E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79344161992580142,-0.22792209961604956)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8888132535124089     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84476839675399285,1.27946530758056196E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.0226976086373915E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   9.5051556103708818E-004
+           2  -1.8888132535124089     
+           3   1.0226976086373915E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       32.8 secs
+
+     total energy              =     -44.03953187 Ry
+     estimated scf accuracy    <       0.00212002 Ry
+
+     iteration # 18     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7084 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.65E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.334E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81493569651214093,1.25190072805259718E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.0372965446529578E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79350230797991916,-0.22808761291542504)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8899772427850399     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84479877855475638,4.60264200376457407E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   3.6788349437557650E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.0372965446529578E-003
+           2  -1.8899772427850399     
+           3   3.6788349437557650E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       34.5 secs
+
+     total energy              =     -44.03914949 Ry
+     estimated scf accuracy    <       0.00232649 Ry
+
+     iteration # 19     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7098 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.65E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.353E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81470961183028345,1.52324737968597269E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.2624784649469905E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79293921709149573,-0.22880377175959049)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8968814435494499     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84458987012380260,1.04662621404590363E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   8.3676233216753632E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.2624784649469905E-003
+           2  -1.8968814435494499     
+           3   8.3676233216753632E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       36.2 secs
+
+     total energy              =     -44.03916777 Ry
+     estimated scf accuracy    <       0.00151134 Ry
+
+     iteration # 20     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7094 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.89E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.429E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81459173736215540,1.26726659245310244E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.0504717227397908E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79270313077894683,-0.22907497533902235)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8995494122352832     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84449425701761338,9.09288134683641558E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   7.2704485593947917E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.0504717227397908E-003
+           2  -1.8995494122352832     
+           3   7.2704485593947917E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       38.0 secs
+
+     total energy              =     -44.03867837 Ry
+     estimated scf accuracy    <       0.00145933 Ry
+
+     iteration # 21     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6989 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.82E-05,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.360E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81442591717527868,1.82894909525919681E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.5163742792405933E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79242208561321681,-0.22921315776120946)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9012747305664579     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84426097932193567,3.48975848680413284E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.7910975425228723E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.5163742792405933E-003
+           2  -1.9012747305664579     
+           3   2.7910975425228723E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       39.7 secs
+
+     total energy              =     -44.03898745 Ry
+     estimated scf accuracy    <       0.00053808 Ry
+
+     iteration # 22     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6955 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  6.73E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.469E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81440538637621995,1.48018293113197022E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.2272446112967573E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79239020908647273,-0.22933390197422640)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9022966741664669     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84424913193091977,2.23968639570264893E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.7913191274571401E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.2272446112967573E-003
+           2  -1.9022966741664669     
+           3   1.7913191274571401E-003
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       41.4 secs
+
+     total energy              =     -44.03836269 Ry
+     estimated scf accuracy    <       0.00092055 Ry
+
+     iteration # 23     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6947 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  6.73E-06,  avg # of iterations =  7.0
+
+     negative rho (up, down):  5.407E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81031343322345295,-2.88457659613787683E-004)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.4037284449378990E-003
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78549094681741838,-0.23806335311414889)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9870631601569531     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84005125335773512,-7.04068322515889506E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -5.6593350206237162E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -2.4037284449378990E-003
+           2  -1.9870631601569531     
+           3  -5.6593350206237162E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       43.3 secs
+
+     total energy              =     -44.03859351 Ry
+     estimated scf accuracy    <       0.00155929 Ry
+
+     iteration # 24     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          7031 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  6.73E-06,  avg # of iterations =  6.0
+
+     negative rho (up, down):  5.327E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81256880969462009,9.78608681911431652E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   8.1321484594879738E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78879205396480667,-0.23402671669413333)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9475012791709234     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84255010236832617,1.98771308422125728E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.5929947514703132E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   8.1321484594879738E-004
+           2  -1.9475012791709234     
+           3   1.5929947514703132E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       45.2 secs
+
+     total energy              =     -44.03908158 Ry
+     estimated scf accuracy    <       0.00011447 Ry
+
+     iteration # 25     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6935 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.43E-06,  avg # of iterations =  5.0
+
+     negative rho (up, down):  5.339E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81311111833856642,9.36144755047378001E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   7.7740886933042367E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79047221061150652,-0.23251939095822113)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9317425627911544     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84293383998064453,3.46117964903812022E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.7725988342396519E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   7.7740886933042367E-004
+           2  -1.9317425627911544     
+           3   2.7725988342396519E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       47.2 secs
+
+     total energy              =     -44.03905371 Ry
+     estimated scf accuracy    <       0.00028381 Ry
+
+     iteration # 26     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6196 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.43E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.332E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81308259510028891,8.68604731362285790E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   7.2134646622097826E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.79041057096931366,-0.23251137655181983)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9318221083635487     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84290018425515534,6.35395492061129632E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   5.0900771376973994E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   7.2134646622097826E-004
+           2  -1.9318221083635487     
+           3   5.0900771376973994E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       49.1 secs
+
+     total energy              =     -44.03899722 Ry
+     estimated scf accuracy    <       0.00012776 Ry
+
+     iteration # 27     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5904 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.43E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.326E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81285382638764558,-4.93696294345958832E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -4.1011324611835712E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78964035262696053,-0.23367668221608084)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9427711817523539     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84269601574752218,-2.62290246704245124E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.1016848091995648E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -4.1011324611835712E-004
+           2  -1.9427711817523539     
+           3  -2.1016848091995648E-005
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       51.1 secs
+
+     total energy              =     -44.03903542 Ry
+     estimated scf accuracy    <       0.00001006 Ry
+
+     iteration # 28     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5820 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.26E-07,  avg # of iterations =  8.0
+
+     negative rho (up, down):  5.335E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81232262409921807,1.34268303959342504E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.1160954514874268E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78896803755667932,-0.23435506416435270)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9496731698002920     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84217629392924753,-7.85693804463709461E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -6.2995089930167319E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.1160954514874268E-004
+           2  -1.9496731698002920     
+           3  -6.2995089930167319E-005
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       53.1 secs
+
+     total energy              =     -44.03905696 Ry
+     estimated scf accuracy    <       0.00000247 Ry
+
+     iteration # 29     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5853 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.09E-08,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.330E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81233076563266249,2.82372227955229779E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.3471749567185600E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78898701553338468,-0.23431325974713527)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9493000644204004     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84218929125578335,1.59848212068420989E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.2816057646779450E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   2.3471749567185600E-004
+           2  -1.9493000644204004     
+           3   1.2816057646779450E-004
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       54.9 secs
+
+     total energy              =     -44.03905779 Ry
+     estimated scf accuracy    <       0.00000014 Ry
+
+     iteration # 30     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5874 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.70E-09,  avg # of iterations = 11.0
+
+     negative rho (up, down):  5.326E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81248332974414439,-1.46261493222063487E-005)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.2155474820686653E-004
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78924274874942890,-0.23404020003064205)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9465558048597791     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84235673202755235,-3.03103917881626521E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.4296956893365376E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.2155474820686653E-004
+           2  -1.9465558048597791     
+           3  -2.4296956893365376E-005
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       57.2 secs
+
+     total energy              =     -44.03905814 Ry
+     estimated scf accuracy    <       0.00000580 Ry
+
+     iteration # 31     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5812 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.70E-09,  avg # of iterations =  9.0
+
+     negative rho (up, down):  5.325E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81245330744059940,-8.26251510227612176E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -6.8670504729538998E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78919284543385071,-0.23408905581958264)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9470563999930539     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84232259090075379,-1.31482553671062759E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.0540132394538272E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -6.8670504729538998E-005
+           2  -1.9470563999930539     
+           3  -1.0540132394538272E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       59.3 secs
+
+     total energy              =     -44.03905771 Ry
+     estimated scf accuracy    <       0.00000231 Ry
+
+     iteration # 32     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5551 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.70E-09,  avg # of iterations =  8.0
+
+     negative rho (up, down):  5.322E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81238014004448877,-1.61931896502580399E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.3459517411334051E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78906858700091786,-0.23423377011902122)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9484844403569033     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84224855723020442,-6.48609383070368395E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -5.1999520098120370E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.3459517411334051E-005
+           2  -1.9484844403569033     
+           3  -5.1999520098120370E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       61.3 secs
+
+     total energy              =     -44.03905797 Ry
+     estimated scf accuracy    <       0.00000014 Ry
+
+     iteration # 33     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5607 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.70E-09,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.321E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236783185448325,7.68512912465749185E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   6.3878518493030154E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903880789162673,-0.23425891212437119)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9487516942382137     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84223837376948274,-4.51696395189868312E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -3.6213290132935533E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   6.3878518493030154E-006
+           2  -1.9487516942382137     
+           3  -3.6213290132935533E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       63.1 secs
+
+     total energy              =     -44.03905802 Ry
+     estimated scf accuracy    <       0.00000001 Ry
+
+     iteration # 34     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5625 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.79E-10,  avg # of iterations =  7.0
+
+     negative rho (up, down):  5.320E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81234190124972849,2.85489999283382723E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.3730584135020117E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78900518035817935,-0.23431344493532305)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9492590952282671     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84220917405882412,-2.06795553230961229E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.6579736045735790E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   2.3730584135020117E-005
+           2  -1.9492590952282671     
+           3  -1.6579736045735790E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       65.0 secs
+
+     total energy              =     -44.03905807 Ry
+     estimated scf accuracy    <       0.00000020 Ry
+
+     iteration # 35     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5653 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.79E-10,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.318E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81234234054600774,-2.12320604126318360E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.7648566491939977E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78900508209614117,-0.23431352691894666)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9492599694829513     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84220956951879111,-2.61429232571199102E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.0959955703669632E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -1.7648566491939977E-007
+           2  -1.9492599694829513     
+           3  -2.0959955703669632E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       66.7 secs
+
+     total energy              =     -44.03905805 Ry
+     estimated scf accuracy    <       0.00000016 Ry
+
+     iteration # 36     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5620 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.79E-10,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.318E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81234684381997246,2.05139684000367256E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.7051577722178881E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78901096990418373,-0.23430476565864664)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9491773157164041     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84221512014475997,7.35177153309499690E-009)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   5.8942065740583376E-008
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.7051577722178881E-006
+           2  -1.9491773157164041     
+           3   5.8942065740583376E-008
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       68.4 secs
+
+     total energy              =     -44.03905802 Ry
+     estimated scf accuracy    <       0.00000010 Ry
+
+     iteration # 37     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5566 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.79E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81235111884380973,1.29339290862868530E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.0750856789272261E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78901895569464331,-0.23429963338198143)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9491183031005352     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84221893765796085,-3.51317111335191108E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.8166357345259701E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.0750856789272261E-005
+           2  -1.9491183031005352     
+           3  -2.8166357345259701E-007
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       70.2 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <       0.00000003 Ry
+
+     iteration # 38     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5600 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  1.79E-10,  avg # of iterations =  5.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236097179030753,3.02325475542221026E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   2.5129397632872539E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903387609712838,-0.23428112378172433)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489378928515393     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84222994543892860,-2.28102591674554791E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.8287566788125745E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   2.5129397632872539E-006
+           2  -1.9489378928515393     
+           3  -1.8287566788125745E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       72.1 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          3.2E-09 Ry
+
+     iteration # 39     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5669 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.95E-11,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236105037517548,4.69300419915253707E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   3.9008408733460074E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903447640798818,-0.23427989969279947)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489268643016706     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84222996507142922,6.49003310107120013E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   5.2032250118268437E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   3.9008408733460074E-006
+           2  -1.9489268643016706     
+           3   5.2032250118268437E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       73.8 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          2.9E-09 Ry
+
+     iteration # 40     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5725 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  3.64E-11,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236133084723117,1.56998474594047957E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.3049761502791509E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903541627225637,-0.23427811291587922)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489106176511741     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84223018456559506,-1.43125552731364692E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.1474737495561838E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.3049761502791509E-005
+           2  -1.9489106176511741     
+           3  -1.1474737495561838E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       75.5 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          1.7E-09 Ry
+
+     iteration # 41     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5709 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.18E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236134579761488,1.46510923090829692E-006)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.2178032771634845E-005
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903546852563700,-0.23427800724097123)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489096645623223     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84223017325882177,-1.17857697744007160E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -9.4489497912199820E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   1.2178032771634845E-005
+           2  -1.9489096645623223     
+           3  -9.4489497912199820E-007
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       77.3 secs
+
+     total energy              =     -44.03905804 Ry
+     estimated scf accuracy    <          1.9E-09 Ry
+
+     iteration # 42     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5720 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.18E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.316E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236127432035454,8.60107588639610913E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   7.1492412321447441E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903543057465775,-0.23427765714589019)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489069998824273     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84223013939128533,-1.17574442011986978E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -9.4262408416330191E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   7.1492412321447441E-006
+           2  -1.9489069998824273     
+           3  -9.4262408416330191E-007
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       79.0 secs
+
+     total energy              =     -44.03905804 Ry
+     estimated scf accuracy    <          1.9E-09 Ry
+
+     iteration # 43     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5878 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.18E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.316E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236119783512128,5.64641323614925949E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   4.6933168193690410E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903529422414220,-0.23427783616977188)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489087261930369     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84223005511886728,-1.61419275984131545E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.2941393538574328E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   4.6933168193690410E-006
+           2  -1.9489087261930369     
+           3  -1.2941393538574328E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       80.8 secs
+
+     total energy              =     -44.03905804 Ry
+     estimated scf accuracy    <          2.3E-09 Ry
+
+     iteration # 44     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5897 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.18E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.316E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236143815520501,4.25677593900699884E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   3.5382447874579244E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903572599035654,-0.23427764352053740)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9489062029078206     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84223020579139818,9.62217023676620761E-009)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   7.7143370079517809E-008
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   3.5382447874579244E-006
+           2  -1.9489062029078206     
+           3   7.7143370079517809E-008
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       82.5 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          1.7E-09 Ry
+
+     iteration # 45     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5977 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.06E-11,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.316E-04 0.000E+00
+
+     Expectation value of exp(iGx):       (0.81236166636145113,-3.40020645416229522E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -2.8262608968518267E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78903625199203975,-0.23427697457106400)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9488997137493846     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):       (0.84223046435086035,-1.90746151887809058E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.5292596271835189E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1  -2.8262608968518267E-007
+           2  -1.9488997137493846     
+           3  -1.5292596271835189E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       84.2 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          5.1E-10 Ry
+
+     iteration # 46     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5993 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  6.43E-12,  avg # of iterations =  3.0
+
+     negative rho (up, down):  5.316E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236413638203242,7.70239979780218059E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   6.4022362949285277E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78904017805653681,-0.23427273447800598)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9488572003381637     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84223300206039009,8.56758772456799306E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   6.8688287561155130E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   6.4022362949285277E-006
+           2  -1.9488572003381637     
+           3   6.8688287561155130E-007
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       86.0 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          2.0E-10 Ry
+
+     iteration # 47     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5906 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.45E-12,  avg # of iterations =  3.0
+
+     negative rho (up, down):  5.316E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236447211937246,1.02373703322676786E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   8.5093008074048979E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78904101946606753,-0.23427142079902027)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9488449043206688     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84223331953291147,1.18212654958355764E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   9.4773722049741085E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   8.5093008074048979E-007
+           2  -1.9488449043206688     
+           3   9.4773722049741085E-007
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       87.8 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          4.4E-10 Ry
+
+     iteration # 48     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          5921 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.45E-12,  avg # of iterations =  1.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236441766902179,8.69788648347466124E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   7.2296825293236689E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78904091929180897,-0.23427139143751669)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9488449073161214     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84223325100639790,1.46971180610271612E-007)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   1.1783008307097872E-006
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   7.2296825293236689E-007
+           2  -1.9488449073161214     
+           3   1.1783008307097872E-006
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       89.6 secs
+
+     total energy              =     -44.03905803 Ry
+     estimated scf accuracy    <          2.7E-10 Ry
+
+     iteration # 49     ecut=    60.00 Ry     beta= 0.30
+     Davidson diagonalization with overlap
+
+---- Real-time Memory Report at c_bands before calling an iterative solver
+           714 MiB given to the printing process from OS
+             0 MiB allocation reported by mallinfo(arena+hblkhd)
+          6000 MiB available memory on the node where the printing process lives
+------------------
+     ethr =  2.45E-12,  avg # of iterations =  2.0
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Expectation value of exp(iGx):        (0.81236421981349605,7.67654772706188700E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   6.3807473931021283E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+
+     Expectation value of exp(iGx):            (0.78904055477017010,-0.23427137941378198)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)  -1.9488456639138874     
+     Ionic Dipole per cell (Ry a.u.)   3.0290317664678215     
+
+     Expectation value of exp(iGx):        (0.84223305744971244,4.01880674419160612E-008)   1.0000000000000000     
+     Electronic Dipole per cell (Ry a.u.)   3.2219680033402914E-007
+     Ionic Dipole per cell (Ry a.u.)   0.0000000000000000     
+Electronic Dipole on Cartesian axes
+           1   6.3807473931021283E-007
+           2  -1.9488456639138874     
+           3   3.2219680033402914E-007
+Ionic Dipole on Cartesian axes
+           1   0.0000000000000000     
+           2   3.0290317664678215     
+           3   0.0000000000000000     
+
+     total cpu time spent up to now is       91.2 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 26529 PWs)   bands (ev):
+
+   -25.0490 -12.8177  -9.0757  -6.9809
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000
+
+     highest occupied level (ev):    -6.9809
+
+!    total energy              =     -44.03905803 Ry
+     total all-electron energy =      -152.885940 Ry
+     estimated scf accuracy    <          6.5E-11 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =     -58.08764610 Ry
+     hartree contribution      =      30.76357438 Ry
+     xc contribution           =      -8.85277676 Ry
+     ewald contribution        =       1.72470380 Ry
+     Dispersion Correction     =      -0.00008441 Ry
+     one-center paw contrib.   =      -9.58682894 Ry
+      -> PAW hartree energy AE =      29.67352926 Ry
+      -> PAW hartree energy PS =     -29.63908908 Ry
+      -> PAW xc energy AE      =     -18.31374923 Ry
+      -> PAW xc energy PS      =       8.69248012 Ry
+      -> total E_H with PAW    =      30.79801455 Ry
+      -> total E_XC with PAW   =     -18.47404587 Ry
+
+     convergence has been achieved in  49 iterations
+
+     negative rho (up, down):  5.317E-04 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00000027    0.00058471    0.00000060
+     atom    2 type  2   force =     0.00094235   -0.00029249   -0.00000018
+     atom    3 type  2   force =    -0.00094208   -0.00029222   -0.00000042
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     0.00000026    2.49905444   -0.00000093
+     atom    2 type  2   force =    -0.08751751   -0.06343752   -0.00000000
+     atom    3 type  2   force =     0.08751750   -0.06343750   -0.00000003
+     The ionic contribution  to forces
+     atom    1 type  1   force =     0.00000000   -4.35270376   -0.00000000
+     atom    2 type  2   force =     3.01818416    2.17635188   -0.00000000
+     atom    3 type  2   force =    -3.01818416    2.17635188   -0.00000000
+     The local contribution  to forces
+     atom    1 type  1   force =    -0.00000151    1.87443148    0.00000098
+     atom    2 type  2   force =    -2.92990429   -2.11321386   -0.00000001
+     atom    3 type  2   force =     2.92990412   -2.11321366   -0.00000023
+     The core correction contribution to forces
+     atom    1 type  1   force =     0.00000001   -0.02020617    0.00000002
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =     0.00000079    0.00000825    0.00000070
+     atom    2 type  2   force =     0.00000166    0.00000180    0.00000001
+     atom    3 type  2   force =    -0.00000156    0.00000184    0.00000002
+
+     Dispersion contribution to forces:
+     atom    1 type  1   force =     0.00000000   -0.00000317    0.00000000
+     atom    2 type  2   force =     0.00017816    0.00000159    0.00000000
+     atom    3 type  2   force =    -0.00017816    0.00000159    0.00000000
+
+     Total force =     0.001513     Total SCF correction =     0.000009
+
+     Total Dispersion Force =     0.000252
+
+
+     Computing stress (Cartesian axis) and pressure
+
+     Message from routine stres:
+     stress with USPP and electric fields (Berry) not implemented
+
+     Writing all to output data dir ./tmp/h2o.save/ :
+     XML data file, charge density, pseudopotentials, collected wavefunctions
+
+     init_run     :      1.73s CPU      2.23s WALL (       1 calls)
+     electrons    :     66.99s CPU     88.99s WALL (       1 calls)
+     forces       :      1.04s CPU      1.49s WALL (       1 calls)
+     force_london :      0.01s CPU      0.01s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      0.15s CPU      0.17s WALL (       1 calls)
+     wfcinit:atom :      0.00s CPU      0.00s WALL (       1 calls)
+     wfcinit:wfcr :      0.14s CPU      0.15s WALL (       1 calls)
+     potinit      :      0.58s CPU      0.73s WALL (       1 calls)
+     hinit0       :      0.60s CPU      0.66s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      7.40s CPU      7.42s WALL (      49 calls)
+     sum_band     :     17.23s CPU     26.34s WALL (      49 calls)
+     v_of_rho     :     16.48s CPU     19.51s WALL (      50 calls)
+     v_h          :      1.11s CPU      1.15s WALL (      50 calls)
+     v_xc         :     15.67s CPU     18.75s WALL (      51 calls)
+     newd         :     12.28s CPU     21.78s WALL (      50 calls)
+     PAW_pot      :      1.21s CPU      1.22s WALL (      50 calls)
+     mix_rho      :      4.76s CPU      4.81s WALL (      49 calls)
+     energy_londo :      0.01s CPU      0.01s WALL (       1 calls)
+
+     Called by c_bands:
+     init_us_2    :      1.22s CPU      1.24s WALL (     400 calls)
+     cegterg      :      7.02s CPU      7.04s WALL (      49 calls)
+
+     Called by sum_band:
+     sum_band:wei :      0.00s CPU      0.00s WALL (      49 calls)
+     sum_band:loo :      0.79s CPU      0.79s WALL (      49 calls)
+     sum_band:buf :      0.00s CPU      0.00s WALL (      49 calls)
+     sum_band:ini :      0.16s CPU      0.17s WALL (      49 calls)
+     sum_band:cal :      0.09s CPU      0.09s WALL (      49 calls)
+     sum_band:bec :      0.00s CPU      0.00s WALL (      49 calls)
+     addusdens    :     15.27s CPU     24.37s WALL (      49 calls)
+                                        0.00s GPU  (      49 calls)
+     addusd:skk   :      0.26s CPU      0.27s WALL (      98 calls)
+                                        0.00s GPU  (      98 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.01s CPU      0.01s WALL (     211 calls)
+     cegterg:over :      0.26s CPU      0.26s WALL (     162 calls)
+     cegterg:upda :      0.17s CPU      0.17s WALL (     162 calls)
+     cegterg:last :      0.41s CPU      0.41s WALL (     144 calls)
+     h_psi        :      5.85s CPU      5.88s WALL (     212 calls)
+     s_psi        :      0.30s CPU      0.30s WALL (     212 calls)
+     g_psi        :      0.04s CPU      0.04s WALL (     162 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.32s CPU      0.32s WALL (     212 calls)
+     vloc_psi     :      5.21s CPU      5.23s WALL (     212 calls)
+     add_vuspsi   :      0.30s CPU      0.30s WALL (     212 calls)
+
+     General routines
+     calbec       :      0.97s CPU      0.98s WALL (     614 calls)
+     fft          :      8.39s CPU      8.42s WALL (     659 calls)
+     ffts         :      0.49s CPU      0.49s WALL (      99 calls)
+     fftw         :      4.17s CPU      4.18s WALL (    1590 calls)
+     interpolate  :      1.16s CPU      1.17s WALL (      50 calls)
+
+     Parallel routines
+
+     PAW routines
+     PAW_pot      :      1.21s CPU      1.22s WALL (      50 calls)
+
+     Electric-field routines
+     c_phase_fiel :      6.71s CPU      7.29s WALL (     147 calls)
+
+     PWSCF        :   1m 9.82s CPU   1m32.82s WALL
+
+
+   This run was terminated on:   8: 2:51   5Jul2025            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
